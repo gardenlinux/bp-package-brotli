@@ -1,0 +1,13 @@
+on:
+  push:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * *'
+jobs:
+  build:
+    uses: gardenlinux/package-build/.github/workflows/build.yml@main
+    with:
+      release: ${{ github.ref == 'refs/heads/main' }}
+      build_dep: |
+        gardenlinux/package-curl 8.12.1-2gl0
+        gardenlinux/package-python3.13 3.13.3-2gl0
