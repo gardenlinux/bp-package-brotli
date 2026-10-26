@@ -1,0 +1,10 @@
+version_orig=1.2.0
+version="$version_orig-4.1"
+git_src --branch "debian/$version" "https://salsa.debian.org/debian/brotli"
+
+# Use earlier dephelper version for 1877
+sed -i 's/debhelper-compat (= 14)/debhelper-compat (= 13)/' "$dir/src/debian/control"
+
+version_suffix=gl0~1877
+
+
