@@ -1,0 +1,2 @@
+git_src -b "debian/1.2.0-4.1" "https://salsa.debian.org/debian/brotli.git"
+version_suffix=gl0~bp2150
