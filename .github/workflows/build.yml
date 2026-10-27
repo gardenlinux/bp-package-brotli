@@ -8,11 +8,3 @@ jobs:
     uses: gardenlinux/package-build/.github/workflows/build.yml@main
     with:
       release: ${{ github.ref == 'refs/heads/main' }}
-      build_dep: |
-        gardenlinux/package-curl 8.23.0-1gl0+bp1877
-        gardenlinux/package-python3.13 3.13.14-1gl0+bp1877
-        gardenlinux/bp-package-nghttp3 1.17.0-1gl0+bp1877
-        gardenlinux/bp-package-ngtcp2 1.24.0-1gl0+bp1877
-        gardenlinux/package-openssl 3.5.5-1gl58+bp1877
-        gardenlinux/bp-package-glibc 2.41-12+deb13u4gl0+bp1877
-
