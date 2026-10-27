@@ -9,5 +9,5 @@ jobs:
     with:
       release: ${{ github.ref == 'refs/heads/main' }}
       build_dep: |
-        gardenlinux/package-curl 8.12.1-2gl0
-        gardenlinux/package-python3.13 3.13.3-2gl0
+        gardenlinux/package-curl 8.23.0-1gl0+bp1877
+        gardenlinux/package-python3.13 3.13.14-1gl0+bp1877
